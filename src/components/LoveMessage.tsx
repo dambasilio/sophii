@@ -8,53 +8,127 @@ const LoveMessage = ({ isVisible }: { isVisible: boolean }) => {
         Te amo bailarina bonita
       </h1>
       
-      <div className="flex justify-center items-center space-x-8 animate-ballet-shoes-dance">
+      <div className="flex justify-center items-center space-x-12 animate-ballet-shoes-dance">
         {/* Zapatilla izquierda */}
         <div className="relative">
-          <svg width="80" height="60" viewBox="0 0 80 60" className="drop-shadow-lg">
-            <path
-              d="M15 45 Q20 35 35 35 Q50 35 65 40 Q70 42 70 45 Q70 50 60 52 L20 52 Q15 50 15 45 Z"
+          <svg width="100" height="80" viewBox="0 0 100 80" className="drop-shadow-lg">
+            {/* Suela de la zapatilla */}
+            <ellipse
+              cx="50"
+              cy="65"
+              rx="35"
+              ry="8"
               fill="#f5c4ca"
-              stroke="#e8a3ab"
-              strokeWidth="2"
-            />
-            <path
-              d="M35 35 Q40 25 45 20 Q50 15 55 20 Q60 25 55 30 Q50 35 35 35"
-              fill="#f5c4ca"
-              stroke="#e8a3ab"
-              strokeWidth="2"
-            />
-            {/* Cintas */}
-            <path
-              d="M30 35 Q25 30 20 25 M40 35 Q35 30 30 25 M50 35 Q45 30 40 25"
               stroke="#e8a3ab"
               strokeWidth="1.5"
+            />
+            
+            {/* Cuerpo principal de la zapatilla */}
+            <path
+              d="M15 65 Q15 45 25 35 Q35 25 50 25 Q65 25 75 35 Q85 45 85 65"
+              fill="#f5c4ca"
+              stroke="#e8a3ab"
+              strokeWidth="1.5"
+            />
+            
+            {/* Punta de la zapatilla */}
+            <path
+              d="M25 35 Q35 20 50 20 Q65 20 75 35 Q70 30 50 30 Q30 30 25 35"
+              fill="#f5c4ca"
+              stroke="#e8a3ab"
+              strokeWidth="1.5"
+            />
+            
+            {/* Cintas cruzadas */}
+            <path
+              d="M30 50 Q20 40 15 25 M35 55 Q25 45 20 30 M40 60 Q30 50 25 35"
+              stroke="#e8a3ab"
+              strokeWidth="2"
               fill="none"
+              strokeLinecap="round"
+            />
+            <path
+              d="M70 50 Q80 40 85 25 M65 55 Q75 45 80 30 M60 60 Q70 50 75 35"
+              stroke="#e8a3ab"
+              strokeWidth="2"
+              fill="none"
+              strokeLinecap="round"
+            />
+            
+            {/* Lazos decorativos */}
+            <path
+              d="M20 25 Q15 20 20 15 Q25 20 20 25 M25 20 Q20 15 25 10 Q30 15 25 20"
+              fill="#f5c4ca"
+              stroke="#e8a3ab"
+              strokeWidth="1"
+            />
+            <path
+              d="M80 25 Q85 20 80 15 Q75 20 80 25 M75 20 Q80 15 75 10 Q70 15 75 20"
+              fill="#f5c4ca"
+              stroke="#e8a3ab"
+              strokeWidth="1"
             />
           </svg>
         </div>
 
         {/* Zapatilla derecha */}
         <div className="relative">
-          <svg width="80" height="60" viewBox="0 0 80 60" className="drop-shadow-lg">
-            <path
-              d="M65 45 Q60 35 45 35 Q30 35 15 40 Q10 42 10 45 Q10 50 20 52 L60 52 Q65 50 65 45 Z"
+          <svg width="100" height="80" viewBox="0 0 100 80" className="drop-shadow-lg">
+            {/* Suela de la zapatilla */}
+            <ellipse
+              cx="50"
+              cy="65"
+              rx="35"
+              ry="8"
               fill="#f5c4ca"
-              stroke="#e8a3ab"
-              strokeWidth="2"
-            />
-            <path
-              d="M45 35 Q40 25 35 20 Q30 15 25 20 Q20 25 25 30 Q30 35 45 35"
-              fill="#f5c4ca"
-              stroke="#e8a3ab"
-              strokeWidth="2"
-            />
-            {/* Cintas */}
-            <path
-              d="M50 35 Q55 30 60 25 M40 35 Q45 30 50 25 M30 35 Q35 30 40 25"
               stroke="#e8a3ab"
               strokeWidth="1.5"
+            />
+            
+            {/* Cuerpo principal de la zapatilla */}
+            <path
+              d="M85 65 Q85 45 75 35 Q65 25 50 25 Q35 25 25 35 Q15 45 15 65"
+              fill="#f5c4ca"
+              stroke="#e8a3ab"
+              strokeWidth="1.5"
+            />
+            
+            {/* Punta de la zapatilla */}
+            <path
+              d="M75 35 Q65 20 50 20 Q35 20 25 35 Q30 30 50 30 Q70 30 75 35"
+              fill="#f5c4ca"
+              stroke="#e8a3ab"
+              strokeWidth="1.5"
+            />
+            
+            {/* Cintas cruzadas */}
+            <path
+              d="M70 50 Q80 40 85 25 M65 55 Q75 45 80 30 M60 60 Q70 50 75 35"
+              stroke="#e8a3ab"
+              strokeWidth="2"
               fill="none"
+              strokeLinecap="round"
+            />
+            <path
+              d="M30 50 Q20 40 15 25 M35 55 Q25 45 20 30 M40 60 Q30 50 25 35"
+              stroke="#e8a3ab"
+              strokeWidth="2"
+              fill="none"
+              strokeLinecap="round"
+            />
+            
+            {/* Lazos decorativos */}
+            <path
+              d="M80 25 Q85 20 80 15 Q75 20 80 25 M75 20 Q80 15 75 10 Q70 15 75 20"
+              fill="#f5c4ca"
+              stroke="#e8a3ab"
+              strokeWidth="1"
+            />
+            <path
+              d="M20 25 Q15 20 20 15 Q25 20 20 25 M25 20 Q20 15 25 10 Q30 15 25 20"
+              fill="#f5c4ca"
+              stroke="#e8a3ab"
+              strokeWidth="1"
             />
           </svg>
         </div>

@@ -10,7 +10,7 @@ const HeartComponent = ({ onClick, isVisible }: HeartComponentProps) => {
   return (
     <div
       className={`cursor-pointer transition-all duration-300 hover:scale-110 ${
-        isVisible ? 'animate-floating' : 'animate-heart-disappear'
+        isVisible ? '' : 'animate-heart-disappear'
       }`}
       onClick={onClick}
     >

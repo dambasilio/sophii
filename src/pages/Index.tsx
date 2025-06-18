@@ -26,12 +26,6 @@ const Index = () => {
         )}
         
         <LoveMessage isVisible={showMessage} />
-        
-        {!heartVisible && !showMessage && (
-          <div className="text-[#f5c4ca] text-lg animate-pulse">
-            Preparando tu sorpresa...
-          </div>
-        )}
       </div>
     </div>
   );

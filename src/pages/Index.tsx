@@ -1,11 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState } from 'react';
+import HeartComponent from '@/components/Heart';
+import LoveMessage from '@/components/LoveMessage';
 
 const Index = () => {
+  const [showMessage, setShowMessage] = useState(false);
+  const [heartVisible, setHeartVisible] = useState(true);
+
+  const handleHeartClick = () => {
+    setHeartVisible(false);
+    // Esperar a que termine la animación del corazón antes de mostrar el mensaje
+    setTimeout(() => {
+      setShowMessage(true);
+    }, 800);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-50 to-rose-100 p-4">
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+        {heartVisible && (
+          <HeartComponent 
+            onClick={handleHeartClick} 
+            isVisible={heartVisible}
+          />
+        )}
+        
+        <LoveMessage isVisible={showMessage} />
+        
+        {!heartVisible && !showMessage && (
+          <div className="text-[#f5c4ca] text-lg animate-pulse">
+            Preparando tu sorpresa...
+          </div>
+        )}
       </div>
     </div>
   );

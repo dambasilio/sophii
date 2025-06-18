@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -84,11 +85,58 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'heart-disappear': {
+					'0%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					},
+					'50%': {
+						transform: 'scale(1.2)',
+						opacity: '0.8'
+					},
+					'100%': {
+						transform: 'scale(0)',
+						opacity: '0'
+					}
+				},
+				'message-appear': {
+					'0%': {
+						transform: 'translateY(20px) scale(0.8)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateY(0) scale(1)',
+						opacity: '1'
+					}
+				},
+				'ballet-shoes-dance': {
+					'0%, 100%': {
+						transform: 'translateY(0) rotate(0deg)'
+					},
+					'25%': {
+						transform: 'translateY(-10px) rotate(-5deg)'
+					},
+					'75%': {
+						transform: 'translateY(-5px) rotate(5deg)'
+					}
+				},
+				'floating': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'heart-disappear': 'heart-disappear 0.8s ease-in-out forwards',
+				'message-appear': 'message-appear 1s ease-out forwards',
+				'ballet-shoes-dance': 'ballet-shoes-dance 2s ease-in-out infinite',
+				'floating': 'floating 3s ease-in-out infinite'
 			}
 		}
 	},

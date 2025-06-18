@@ -15,6 +15,10 @@ const LoveMessage = ({ isVisible }: { isVisible: boolean }) => {
           className="w-32 h-32 md:w-40 md:h-40 drop-shadow-lg"
         />
       </div>
+
+      <div className="mt-8 text-[#f5c4ca] text-lg font-light">
+        Ya te quiero ver mi amor
+      </div>
     </div>
   );
 };

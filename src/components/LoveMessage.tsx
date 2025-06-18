@@ -4,7 +4,7 @@ const LoveMessage = ({ isVisible }: { isVisible: boolean }) => {
 
   return (
     <div className="animate-message-appear text-center">
-      <h1 className="text-4xl md:text-6xl font-bold text-[#f5c4ca] mb-8 font-serif">
+      <h1 className="text-4xl md:text-6xl font-bold text-[#f5c4ca] mb-8 font-light">
         Te amo bailarina bonita
       </h1>
       
